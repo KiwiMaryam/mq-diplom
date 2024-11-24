@@ -1,0 +1,928 @@
+@font-face {
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff") format("woff");
+}
+
+
+@font-face {
+    font-family: "OpenSans";
+    font-style: bold;
+    font-weight: 700;
+    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff") format("woff");
+}
+
+body {
+    width: 100%;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 400; 
+}
+
+body, h1, h2, h3, h4, h5, ul {
+    margin: 0;
+    padding: 0;
+    font-family: "OpenSans";
+}
+
+.tags {
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: black;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    margin: 10px auto 29px auto;
+    border-bottom: 3px solid #b59f5b;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} 
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+time {
+    color: #888888;
+    font-size: 13px;
+    font-family: "OpenSans";
+}
+
+sup {
+    color: #b59f5b;  
+}
+
+.header {
+    background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/refs/heads/master/sources/img/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 130px;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: 1;
+    position: absolute;
+}
+
+.logo {
+    width: 180px;
+}
+
+.logo--mobile {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    text-transform: uppercase;
+    font-size: 13px;
+    position: relative;
+    padding: 27px 15px 0px 15px;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav svg {
+    display: none;
+    width: 30px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    display: flex;
+}
+
+.nav ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-family: "OpenSans";
+}
+
+.nav ul li:not(:first-child) {
+    padding-left: 35px;
+}
+
+.header__heading {
+    text-transform: uppercase;
+    font-family: "OpenSans";
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 75px;
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 0px 0 9px;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+/* Код дипломной работы "Мобильная верстка" */
+.trending--now {
+    margin: 50px auto 30px auto;
+}
+
+.trending--now__blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5px;
+}
+
+.trending--now__blocks__block {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    min-height: 350px;
+}
+
+.trending--now__blocks__block__content {
+    /* display: flex; */
+    border: 3px solid rgba(181, 159, 91, 0.596);
+    padding: 30px;
+    margin: 20px;
+    width: 100%;
+}
+
+.trending--now__blocks__categories a {
+    font-family: "OpenSans";
+    font-style: bold;
+    font-weight: 700;
+}
+
+.trending--now ul {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.trending--now ul li a {
+    text-decoration: none;
+    color: #b59f5b;
+}
+
+.trending--now h3 a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.trending--now h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.block--1 {
+    background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/refs/heads/master/sources/img/trend1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.block--2 {
+    background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/refs/heads/master/sources/img/trend2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.block--3 {
+    background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/refs/heads/master/sources/img/trend3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.block--4 {
+    background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/refs/heads/master/sources/img/trend4.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.trending--now__blocks__block::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: -1;
+}
+/* Код дипломной работы "Мобильная верстка" */
+/* КОНЕЦ ЧАСТИ */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 59.7px auto 0 auto;
+    max-width: 1170px;
+}
+
+.last--posts {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.last--posts__post:not(:first-child){
+    padding-top: 60.7px;
+}
+
+.last--posts__post {
+    display: flex;
+    max-width: 778px;
+    align-self: flex-start;  
+}
+
+.last--posts__post h3 {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5px 0 29px 0;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.last--posts__post h3 a {
+    font-family: "OpenSans";
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.categories {
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.categories li {
+    padding-right: 19px;
+}
+
+.categories a {
+    text-decoration: none; 
+    font-family: "OpenSans";
+    font-weight: bold;
+    color: #b59f5b;
+    font-size: 14px;
+}
+
+.last--posts__post__photo {
+    padding-right: 30px;
+    min-width: 382px;
+    align-self: flex-start;  
+}
+
+.author {
+    font-family: "OpenSans";
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 6px;
+}
+
+.text {
+    font-family: "OpenSans";
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.text:nth-child(n) {
+    padding-bottom: 9px;
+}
+
+.datetime--author {
+    padding-bottom: 45px;
+}
+
+aside {
+    width: 272px;
+    align-items: center;
+    justify-content: center;
+}
+
+aside h2 {
+    text-align: center;
+    font-size: 16px;
+    font-family: "OpenSans";
+    font-weight: bold;
+}
+
+.new--posts {
+    display: flex;
+    font-family: "OpenSans";
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 21px;
+}
+
+.new--posts__time--text {
+    line-height: 18px;
+}
+
+.new--posts__time--text h3 a {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.new--posts time {
+    font-size: 12px;
+}
+
+.new--posts__photo {
+    margin-right: 19px;
+    min-width: 70px;
+    align-self: flex-start;  
+}
+
+.new--posts__form {
+    margin-top: 60px;
+    display: flex;
+}
+
+.new--posts__form label {
+    width: 100%;
+}
+
+.new--posts__form__input {
+    height: 48px;
+    width: 100%;
+    background-color: #f4f7f6;
+    border: none;
+}
+
+.new--posts__form__button {
+    cursor: pointer;
+    background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/c5b3033e6d4c73ee4bd56390bc68954fa70c1367/sources/svg/search.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #b59f5b;
+    background-size: 19px;
+    min-height: 48px;
+    max-height: 48px;
+    width: 48px;
+    border: none;
+}
+
+.mailing {
+    margin-top: 55px;
+    margin-bottom: 54px;
+}
+
+.mailing--form {
+    display: block;
+}
+
+.mailing--form__input {
+    height: 48px;
+    width: 100%;   
+    background-color: #f4f7f6;
+    border: none;
+    margin: -3px 0 15px 0;
+    padding: 0 0 0 0;
+}
+
+.mailing--form__button {
+    padding: 0 0 0 0;
+    cursor: pointer;
+    height: 48px;
+    width: 100%; 
+    border: none;
+    background-color: #b59f5b;
+}
+
+.mailing--form__button__span {
+    text-transform: uppercase;
+    font-family: "OpenSans";
+    font-weight: bold;
+    color: white;
+}
+
+.tags ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+}
+
+.tags ul li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags a {
+    margin: 0px 5px 7px 5px;
+    padding: 3px 10px 3px 10px;
+    font-family: "OpenSans";
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+    border: 3px solid #f4f7f6;
+    text-decoration: none;
+}
+
+.themes ul li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 2px solid #f4f7f6;
+}
+
+.themes ul li a {
+    display: block;
+    font-family: "OpenSans";
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Код дипломной работы "Мобильная верстка" */
+
+.shop--items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    max-width: 1300px;
+    margin: 80px auto 80px auto;
+}
+
+.shop--items__block {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.shop--items__block__content--box {
+
+    display: flex;
+    flex-direction: column;
+    outline: 3px solid #b59f5b;
+    outline-offset: 20px;
+    padding: 20px 0 0 0;
+    margin-top: -10px;
+    flex-grow: 1;
+}
+
+.shop--items__block__about {
+    margin: 20px 0px 20px 0px;
+}
+
+.shop--items__block__price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop--items__block__price button {
+    background: #b59f5b;
+    color: white;
+    border: 0px;
+    padding: 15px 30px 15px 30px;
+}
+
+.shop--items__block__price button p {
+    font-family: "OpenSans";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.shop--items__block__price__text p {
+    color: black;
+    font-family: "OpenSans";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.shop--items__block__price .shop--items__block__price__text .shop--items__block__price__text__strikeout {
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.shop--items h2 {
+    display: grid;
+    font-size: 18px;
+    text-align: center;
+    grid-column: span 3;
+}
+
+.shop--items__block h3 {
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+.shop--items__block a {
+  text-decoration: none;
+}
+
+.shop--items__block span {
+  color: #b59f5b;
+}
+
+.shop--items__block__price__text__strikeout__button {
+  text-transform: uppercase; 
+}
+
+.background {
+    position: fixed; 
+    left: 0; 
+    right: 0; 
+    top: 0; 
+    bottom: 0; 
+    background-color: rgba(1, 1, 1, 0.8); 
+    z-index: 100; 
+    overflow: auto; 
+}
+
+.form {
+    padding: 50px;
+    background: white;
+    position: fixed; top: 50%; left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 330px;
+}
+
+.form svg {
+    transform: translate(0%, -130%);
+    width: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.form h4 {
+    text-align: center;
+    font-family: "OpenSans";
+    font-style: bold;
+    font-weight: 700;
+}
+
+.form h6 {
+    font-size: 14px;
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.form button {
+    margin-top: 20px;
+    border: none;
+    width: 340px;
+    height: 50px;
+    background: #b59f5b;
+}
+
+.form button span {
+    color: white;
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: bold;
+}
+
+.form__activity {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.form__activity input {
+    border: none;
+    background: rgb(240, 240, 240);
+    padding: 15px 40px 15px 40px;
+    margin-top: 10px;
+    background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/c5b3033e6d4c73ee4bd56390bc68954fa70c1367/sources/svg/form-arrows.svg");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: right 20px center;
+}
+
+.form__question {
+    display: flex;
+}
+
+.question__radio {
+    margin-right: 20px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    background-clip: content-box;
+    border: 2px solid #b59f5b;
+    background-color: white;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+    background-color: #b59f5b;
+}
+
+textarea {
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 400;
+    resize: none;
+    border: none;
+    background: rgb(240, 240, 240);
+}
+
+button--send {
+  text-transform: uppercase;
+}
+
+/* Код дипломной работы "Мобильная верстка" */
+/* КОНЕЦ ЧАСТИ */
+
+
+.footer--img {
+    display: flex;
+    background-color: #f4f7f6;
+    margin: 65px auto 64.5px auto;
+    padding: 32.5px 0 32.5px 0;
+    align-items: center;
+    justify-content: center;
+    max-width: 1170px;
+}
+
+.footer--img ul {
+    display: flex;
+}
+
+.footer--img img {
+    width: 20px;
+    margin: 0px 15px 0 15px;
+}
+
+.footer--etc
+{
+    color: #999999;
+    text-align: center;
+    font-family: "OpenSans";
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Код дипломной работы "Мобильная верстка" */
+@media (max-width: 640px) {
+
+    aside {
+        margin-top: 45px;
+    }
+
+    .content {
+        max-width: 300px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo--mobile {
+        display: flex;
+        position: relative;
+        width: 180px;
+        z-index: 2;
+        padding: 125px 25px 0 25px;
+        margin: auto;
+    }
+
+    .header__heading {
+        font-size: 23px;
+        line-height: 40px;
+        padding: 50px 25px 0 25px;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .nav svg {
+        display: block;
+    }
+
+    .trending--now__blocks {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .trending--now__blocks__block {
+        padding-top: 50px;
+        font-size: 14px;
+        min-height: auto;
+        max-height: 300px;
+    }
+
+    .trending--now__blocks h3 {
+        font-size: 14px;
+    }
+
+    .last--posts__post {
+        display: flex;
+        flex-direction: column;
+        max-width: 370px;
+    }
+
+    .last--posts__post__photo {
+        min-width: auto;
+        max-width: 300px;
+        padding-right: 0px;
+        margin: auto;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .shop--items {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        width: 100%;
+    }
+    
+
+    .shop--items h2 {
+        grid-column: span 1;
+    }
+
+    .shop--items h3 {
+        font-size: 15px;
+    }
+
+    .shop--items__block {
+        max-width: 250px;
+    }
+
+}
+
+@media (max-width: 641px) and (orientation: landscape) {
+  
+    .trending--now__blocks__block__content {
+        border: 3px solid rgba(181, 159, 91, 0.596);
+        padding: 20px;
+        margin: 10px;
+        width: 100%;
+    }
+
+    .shop--items {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+
+    .shop--items h2 {
+        grid-column: span 1;
+    }
+
+    .trending--now__blocks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+ 
+      .trending--now__blocks {
+        grid-template-columns: repeat(4, 1fr);
+    }
+  
+}
+
+@media (min-width: 641px) and (max-width: 725px) {
+
+    .aside {
+        width: 100%;
+    }
+
+    .shop--items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        max-width: 641px;
+    }
+
+    .last--posts__post__photo {
+    max-width: 300px;
+    min-width: 300px;
+  } 
+  
+  .last--posts__post {
+    max-width: 300px;
+  }
+
+  .shop--items__block {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+}
+  
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+  
+    .content {
+        width: 100%;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .nav svg {
+        display: block;
+    }
+
+    .content {
+        justify-content: space-around;
+    }
+
+    .trending--now__blocks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .last--posts__post {
+        display: flex;
+        flex-direction: column;
+        max-width: 370px;
+    }
+
+    .shop--items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        width: 100%;
+    }
+
+    .shop--items h2 {
+        grid-column: span 2;
+    }
+
+}
+/* Код дипломной работы "Мобильная верстка" */
+/* КОНЕЦ ЧАСТИ */
